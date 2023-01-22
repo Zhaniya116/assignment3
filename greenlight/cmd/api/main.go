@@ -61,7 +61,7 @@ func main() {
 	flag.IntVar(&cfg.smtp.port, "smtp-port", 587, "SMTP port")
 	flag.StringVar(&cfg.smtp.username, "smtp-username", "211173@astanait.edu.kz", "SMTP username")
 	flag.StringVar(&cfg.smtp.password, "smtp-password", "Aitu2021!", "SMTP password")
-	flag.StringVar(&cfg.smtp.sender, "smtp-sender", "Greenlight <no-reply@greenlight.alexedwards.net>", "SMTP sender")
+	flag.StringVar(&cfg.smtp.sender, "smtp-sender", "Greenlight <no-reply211173@astanait.edu.kz>", "SMTP sender")
 	flag.Parse()
 	logger := jsonlog.New(os.Stdout, jsonlog.LevelInfo)
 	db, err := openDB(cfg)
